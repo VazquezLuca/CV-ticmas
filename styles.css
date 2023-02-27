@@ -1,0 +1,142 @@
+:root {
+
+    --fuente: 'Moon Dance', cursive;
+}
+
+/*
+*{ outline: 1px solid pink;} */
+
+
+
+
+
+body {
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%23aa92ac' fill-opacity='0.4' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
+
+    font-family: var(--fuente);
+
+}
+
+header {
+    color: rgb(180, 89, 20);
+    background: rgb(77 17 112 / 15%);
+
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+
+
+}
+
+header,
+section {
+
+
+    width: 960px;
+    margin: auto;
+    display: flex;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+}
+
+.title {
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+h2 {
+
+    background-color: rgb(189 110 229 / 19%);
+    color: rgb(116 215 158 / 66%);
+}
+
+.caja {
+    width: 50%;
+    list-style-type: circle;
+    color: rgb(2, 2, 2);
+    background-color: rgb(159, 151, 165);
+
+
+}
+
+article {
+    width: 60%;
+
+}
+
+#imagen:hover {
+    height: 200px;
+
+    transition: height 1s ease 0s;
+    height: 300px;
+    width: 300px;
+   
+}
+
+.img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-right: 16px;
+}
+
+
+
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: rgb(49 195 59);
+    font-weight: bold;
+}
+
+
+
+.col {
+    margin-top: 50px;
+    transition: background-color 1s ease 0s;
+
+}
+
+.col :hover {
+    background-color: rgb(203, 184, 221);
+}
+.tamaño{
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
